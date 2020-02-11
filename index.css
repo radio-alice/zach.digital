@@ -1,0 +1,65 @@
+body {
+  background-color: var(--light-grey);
+}
+main {
+  margin: calc(6vw - var(--s1)) 0;
+}
+.card {
+  max-width: var(--measure);
+  background-color: var(--grey);
+  padding: var(--s0);
+  flex-grow: 1;
+}
+.card.clickable {
+  box-shadow: var(--s-2) var(--s-2) var(--dark-grey);
+}
+.card.clickable:active {
+  transform: translate(var(--s-2), var(--s-2));
+  box-shadow: none;
+}
+.card img,
+video {
+  margin-left: calc(var(--s0) * -1);
+  width: calc(100% + var(--s0) + var(--s0));
+  height: auto;
+}
+summary {
+  cursor: pointer;
+  border-bottom: var(--s-6) dashed var(--purple);
+}
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker,
+details > summary::marker {
+  display: none;
+}
+details > summary > :last-child {
+  position: relative;
+}
+details > summary > :last-child::after {
+  content: '→';
+  font-size: var(--s2);
+  position: absolute;
+  bottom: calc(-1 * (var(--s1) / 2));
+  left: calc(2 * var(--s4));
+}
+details[open] > summary > :last-child:after {
+  content: '↯';
+}
+details > :last-child {
+  margin-top: var(--s0);
+}
+.owl h3,
+.owl h2 {
+  border-bottom: solid var(--s-3) var(--owl);
+  max-width: max-content;
+}
+.personal h3,
+.personal h2 {
+  border-bottom: solid var(--s-3) var(--personal);
+  max-width: max-content;
+}
+#links {
+  font-style: italic;
+}

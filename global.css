@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Bagnard';
+  src: url('/static/BagnardSans.otf');
+}
+:root {
+  --ratio: 1.5;
+  --s-6: calc(var(--s-5) / var(--ratio));
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+  --measure: 50ch;
+
+  --dark-grey: rgb(163, 166, 197);
+  --grey: rgb(226, 227, 238);
+  --light-grey: rgb(245, 245, 248);
+  --owl: rgb(185, 210, 255);
+  --personal: rgb(255, 192, 239);
+  --links: rgb(20, 0, 200);
+  --light-links: rgb(42, 83, 218);
+  --purple: rgb(22, 0, 58);
+
+  font-size: var(--s0);
+  font-family: 'Bagnard';
+  color: var(--purple);
+}
+* {
+  max-width: var(--measure);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body,
+div,
+header,
+nav,
+main,
+footer,
+hr {
+  max-width: none;
+  line-height: 1.5;
+}
+.cluster {
+  --space: var(--s1);
+  overflow: hidden;
+}
+.cluster > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: calc(var(--space) / 2 * -1);
+}
+.cluster > * > * {
+  margin: calc(var(--space) / 2);
+}
+.stack {
+  --space: var(--s0);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.stack > * + * {
+  margin-top: var(--space);
+}
+a {
+  color: var(--links);
+}
+a:visited {
+  color: var(--light-links);
+}
+h1 {
+  font-size: var(--s3);
+  font-style: italic;
+}
