@@ -26,12 +26,11 @@ video {
 summary {
   cursor: pointer;
   border-bottom: var(--s-6) dashed var(--purple);
-}
-details > summary {
   list-style: none;
+  outline: none;
 }
-details > summary::-webkit-details-marker,
-details > summary::marker {
+summary::-webkit-details-marker,
+summary::marker {
   display: none;
 }
 details > summary > :last-child {
