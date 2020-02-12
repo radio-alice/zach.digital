@@ -2,6 +2,10 @@
   font-family: 'Bagnard';
   src: url('/static/BagnardSans.otf');
 }
+@font-face {
+  font-family: 'Barlowfold';
+  src: url('/static/Barlowfold.otf');
+}
 :root {
   --ratio: 1.5;
   --s-6: calc(var(--s-5) / var(--ratio));
@@ -84,4 +88,15 @@ a:visited {
 h1 {
   font-size: var(--s3);
   font-style: italic;
+}
+h2 {
+  font-size: var(--s2);
+}
+h3 {
+  font-size: var(--s1);
+}
+h1,
+h2,
+h3 {
+  font-family: 'Barlowfold';
 }
