@@ -62,3 +62,10 @@ details > :last-child {
 #links {
   font-style: italic;
 }
+ul {
+  list-style: none;
+}
+ul li::before {
+  content: '→';
+  margin: 0 var(--s-2);
+}
