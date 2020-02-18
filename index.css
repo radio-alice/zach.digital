@@ -18,7 +18,7 @@ main > section {
 .card {
   padding-top: var(--s0);
 }
-.card:last-child {
+.card > :last-child {
   padding-bottom: var(--s0);
 }
 .owl .card {
