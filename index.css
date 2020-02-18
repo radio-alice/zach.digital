@@ -1,71 +1,69 @@
-body {
-  background-color: var(--light-grey);
+:root {
+  --res-width: calc(7vw - var(--s0));
 }
-main {
-  margin: calc(6vw - var(--s1)) 0;
+main > section {
+  padding: var(--s0) var(--res-width);
+}
+.case-link {
+  width: 100%;
+  display: block;
+  margin: 0 !important;
+  padding: var(--s-2);
+  text-align: center;
+  font-family: 'Bagnard';
+  font-size: var(--s0);
+  background-color: var(--pink);
+  color: var(--links) !important;
 }
 .card {
-  max-width: var(--measure);
+  padding-top: var(--s0);
+}
+.card:last-child {
+  padding-bottom: var(--s0);
+}
+.owl .card {
   background-color: var(--grey);
-  padding: var(--s0);
-  flex-grow: 1;
+  color: var(--purple);
 }
-.card.clickable {
-  box-shadow: var(--s-2) var(--s-2) var(--dark-grey);
+.personal .card {
+  background-color: var(--dark-blue);
+  color: var(--light-grey);
 }
-.card.clickable:active {
-  transform: translate(var(--s-2), var(--s-2));
-  box-shadow: none;
+.personal .card a {
+  color: var(--pink);
 }
-.card img,
-video {
-  margin-left: calc(var(--s0) * -1);
-  width: calc(100% + var(--s0) + var(--s0));
+.card > p,
+.card > h2,
+.card > h3,
+.card > h4,
+.card > .case-link {
+  margin-left: var(--s0);
+  margin-right: var(--s0);
+}
+.card > img,
+.card > video {
+  width: 100%;
   height: auto;
 }
-summary {
-  cursor: pointer;
-  border-bottom: var(--s-6) dashed var(--purple);
-  list-style: none;
-  outline: none;
+.about {
+  display: flex;
+  justify-content: flex-end;
 }
-summary::-webkit-details-marker,
-summary::marker {
-  display: none;
+.owl {
+  padding: var(--s2) var(--res-width);
+  background-color: var(--dark-blue);
+  color: var(--light-grey);
+  width: 100%;
 }
-details > summary > :last-child {
-  position: relative;
+.owl-head {
+  margin-left: var(--s0);
 }
-details > summary > :last-child::after {
-  content: '→';
-  font-size: var(--s2);
-  position: absolute;
-  bottom: calc(-1 * (var(--s1) / 2));
-  left: calc(2 * var(--s4));
-}
-details[open] > summary > :last-child:after {
-  content: '↯';
-}
-details > :last-child {
-  margin-top: var(--s0);
-}
-.owl h3,
-.owl h2 {
-  border-bottom: solid var(--s-3) var(--owl);
-  max-width: max-content;
-}
-.personal h3,
-.personal h2 {
-  border-bottom: solid var(--s-3) var(--personal);
-  max-width: max-content;
+.owl h2 a {
+  color: var(--pink);
 }
 #links {
   font-style: italic;
-}
-ul {
-  list-style: none;
-}
-ul li::before {
-  content: '→';
-  margin: 0 var(--s-2);
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
 }

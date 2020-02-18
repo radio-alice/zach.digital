@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zach Sherman - e-worm.club</title>
+    <link rel="stylesheet" href="global.css" />
+    <style>
+      body > div {
+        margin: var(--s1) auto;
+        width: min-content;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stack">
+      <h3>
+        <a href="https://e-worm.club" target="_blank">e-worm.club</a>
+        (<a href="https://github.com/radio-alice/e-worm" target="_blank"
+          >source code</a
+        >)
+      </h3>
+      <video controls>
+        <source src="/static/eworm.mp4" type="video/mp4" />
+      </video>
+      <p>
+        I’m building a custom
+        <a
+          href="http://pleroman.social"
+          target="_blank"
+          rel="noopener noreferrer"
+          >pleroma</a
+        >
+        client so that my friends and I can have a cute, self-hosted social
+        network to post about politics and art. Besides being much more visually
+        interesting than our facebook messenger groupchat, e-worm also attempts
+        to solve design problems around conversational, collaborative thinking.
+        The biggest of these problems is the inherent ephemerality of our
+        groupchat— it doesn’t really succeed as a collaborative thinking space
+        because it has no long-term memory. When messages are constantly buried
+        under new ones, it places the burden on us to remember previous
+        conversations. So the ultimate design goal for e-worm is to create a
+        self-archiving conversational interface that preserves thought and helps
+        us keep thinking new things rather than going in intellectual circles.
+      </p>
+      <p>
+        One idea I’m testing is emphasizing threads in the UI to force us to
+        delineate our conversations rather than having an unparseable monolithic
+        stream of consciousness (as in our current groupchat). These threads
+        currently have top-level tags that are chosen from a few preset options
+        when the first post is added. No one has really been making use of
+        these, so I’m in the process of testing out other options.
+      </p>
+      <p>
+        I also plan to add an ‘export to
+        <a href="http://are.na" target="_blank" rel="noopener noreferrer"
+          >are.na</a
+        >’ button on each thread that will create a channel from the thread with
+        each message as a ‘block’. Higher level channels will categorize these
+        ‘thread’ channels by subject. I chose are.na because its interface
+        encourages a sort of public digital memory that I haven’t found with any
+        other software. Are.na itself doesn’t have the
+        <em>conversational</em> UI that I think is necessary for a real-time
+        collaborative thinking tool— it’s interface is more about discovering
+        and connecting than communicating directly. I’m still sketching out
+        ideas for how to better tie these two interfaces (e-worm conversation
+        and are.na archive) into one.
+      </p>
+      <p>
+        The UI is completely navigable by keyboard shortcuts, which can be
+        viewed by holding down the ‘control’ key.
+      </p>
+    </div>
+    <footer>
+      <div><a id="email" href="mailto:zach@zach.digital">email me</a></div>
+    </footer>
+  </body>
+</html>

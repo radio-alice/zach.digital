@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Bagnard';
-  src: url('/static/BagnardSans.otf');
+  font-family: 'Spectral';
+  src: url('/static/Spectral-Regular.ttf');
 }
 @font-face {
-  font-family: 'Barlowfold';
-  src: url('/static/Barlowfold.otf');
+  font-family: 'Bagnard';
+  src: url('/static/BagnardSans.otf');
 }
 :root {
   --ratio: 1.5;
@@ -20,19 +20,20 @@
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
-  --measure: 50ch;
+  --measure: 60ch;
 
   --dark-grey: rgb(163, 166, 197);
   --grey: rgb(226, 227, 238);
   --light-grey: rgb(245, 245, 248);
-  --owl: rgb(185, 210, 255);
-  --personal: rgb(255, 192, 239);
-  --links: rgb(20, 0, 200);
-  --light-links: rgb(42, 83, 218);
+  --dark-blue: rgb(20, 0, 200);
+  --light-blue: rgb(42, 83, 218);
+  --pink: rgb(255, 192, 239);
   --purple: rgb(22, 0, 58);
+  --links: var(--dark-blue);
+  --light-links: var(--light-blue);
 
-  font-size: var(--s0);
-  font-family: 'Bagnard';
+  font-size: calc(var(--s0) * 1.1);
+  font-family: 'Spectral';
   color: var(--purple);
 }
 * {
@@ -44,6 +45,7 @@
 html,
 body,
 div,
+section,
 header,
 nav,
 main,
@@ -59,12 +61,14 @@ hr {
 .cluster > * {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   margin: calc(var(--space) / 2 * -1);
 }
 .cluster > * > * {
   margin: calc(var(--space) / 2);
+  flex-grow: 1;
+  max-width: var(--measure);
 }
 .stack {
   --space: var(--s0);
@@ -97,6 +101,50 @@ h3 {
 }
 h1,
 h2,
-h3 {
-  font-family: 'Barlowfold';
+h3,
+h4 {
+  font-family: 'Bagnard';
+}
+blockquote em {
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+ul li::before {
+  content: '→';
+  margin: 0 var(--s-2);
+}
+body {
+  background-color: var(--grey);
+  width: 100%;
+}
+#email {
+  padding: var(--s-2) var(--s1);
+  background-color: var(--dark-blue);
+  color: var(--light-grey);
+  font-size: var(--s1);
+  text-align: center;
+  box-shadow: var(--s-2) var(--s-2) var(--dark-grey);
+}
+#email:active {
+  box-shadow: none;
+  transform: translate(var(--s-2), var(--s-2));
+}
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+footer > * {
+  margin: var(--s0) calc(var(--s1) * 2);
+  flex: 1;
+}
+footer > div {
+  display: flex;
+  justify-content: center;
 }
