@@ -8,18 +8,19 @@ main > section {
   width: 100%;
   display: block;
   margin: 0 !important;
-  padding: var(--s-2);
+  padding: var(--s-1) 0;
+  background-color: var(--dark-blue);
+  color: var(--light-grey) !important;
+  border: solid var(--s-3) var(--pink);
   text-align: center;
   font-family: 'Bagnard';
   font-size: var(--s0);
-  background-color: var(--pink);
-  color: var(--links) !important;
 }
 .card {
   padding-top: var(--s0);
 }
 .card > :last-child {
-  padding-bottom: var(--s0);
+  padding-bottom: var(--s-1);
 }
 .owl .card {
   background-color: var(--grey);
