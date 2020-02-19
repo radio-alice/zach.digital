@@ -117,6 +117,7 @@ body {
   width: 100%;
 }
 #email {
+  width: 100%;
   padding: var(--s-2) var(--s1);
   background-color: var(--dark-blue);
   color: var(--light-grey);
