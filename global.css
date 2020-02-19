@@ -24,7 +24,7 @@
 
   --dark-grey: rgb(163, 166, 197);
   --grey: rgb(226, 227, 238);
-  --light-grey: rgb(245, 245, 248);
+  --light-grey: rgb(242, 242, 246);
   --dark-blue: rgb(20, 0, 200);
   --light-blue: rgb(42, 83, 218);
   --pink: rgb(255, 192, 239);
@@ -104,11 +104,6 @@ h2,
 h3,
 h4 {
   font-family: 'Bagnard';
-}
-blockquote em {
-  font-style: normal;
-  font-weight: bold;
-  color: white;
 }
 ul {
   list-style: none;
