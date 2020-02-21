@@ -40,6 +40,7 @@ main > section {
 .card > h2,
 .card > h3,
 .card > h4,
+.card > ul,
 .card > .case-link {
   margin-left: var(--s0);
   margin-right: var(--s0);
@@ -59,7 +60,7 @@ main > section {
   color: var(--light-grey);
   width: 100%;
 }
-.owl-head {
+.owl .head {
   margin-left: var(--s0);
 }
 .owl h2 a {
@@ -70,7 +71,7 @@ main > section {
   font-weight: bold;
   color: white;
 }
-.personal-head {
+.personal .head {
   margin: 0 var(--s0) var(--s1) 0;
   text-align: right;
 }
