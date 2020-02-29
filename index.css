@@ -5,10 +5,11 @@ footer,
 main > section {
   padding: var(--s0) var(--res-width);
 }
+footer > div,
 main > section > * {
-  max-width: 1300px;
+  max-width: calc(2 * var(--measure) + 3.6rem);
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 main > .cluster > * > * {
   --space: var(--s1);

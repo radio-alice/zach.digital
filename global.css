@@ -130,7 +130,7 @@ body {
   box-shadow: none;
   transform: translate(var(--s-2), var(--s-2));
 }
-footer {
+footer > div > * {
   --space: var(--s1) !important;
 }
 footer > .nav-link {
