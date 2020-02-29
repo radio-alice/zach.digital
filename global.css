@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'Spectral';
-  src: url('/static/Spectral-Regular.ttf');
-}
-@font-face {
   font-family: 'Bagnard';
   src: url('/static/BagnardSans.otf');
 }
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url('/static/hkgrotesk_regular.woff') url('/static/hkgrotesk_bold.woff');
+}
 :root {
-  --ratio: 1.7;
+  --ratio: 1.5;
   --s-6: calc(var(--s-5) / var(--ratio));
   --s-5: calc(var(--s-4) / var(--ratio));
   --s-4: calc(var(--s-3) / var(--ratio));
@@ -20,7 +20,7 @@
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
-  --measure: 60ch;
+  --measure: 50ch;
 
   --dark-grey: rgb(163, 166, 197);
   --grey: rgb(226, 227, 238);
@@ -35,7 +35,7 @@
   --light-links: var(--light-blue);
 
   font-size: calc(var(--s0) * 1.1);
-  font-family: 'Spectral';
+  font-family: 'HK Grotesk', sans-serif;
   color: var(--purple);
 }
 * {
@@ -91,20 +91,14 @@ a:visited {
   color: var(--light-links);
 }
 h1 {
-  font-size: var(--s3);
-  font-style: italic;
+  font-size: calc(var(--s3) - 0.3rem);
 }
 h2 {
   font-size: var(--s2);
 }
-h3 {
-  font-size: var(--s1);
-}
-h1,
-h2,
 h3,
 h4 {
-  font-family: 'Bagnard';
+  font-size: var(--s1);
 }
 ul {
   list-style: none;
