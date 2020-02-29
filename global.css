@@ -7,7 +7,7 @@
   src: url('/static/BagnardSans.otf');
 }
 :root {
-  --ratio: 1.5;
+  --ratio: 1.7;
   --s-6: calc(var(--s-5) / var(--ratio));
   --s-5: calc(var(--s-4) / var(--ratio));
   --s-4: calc(var(--s-3) / var(--ratio));
@@ -25,11 +25,13 @@
   --dark-grey: rgb(163, 166, 197);
   --grey: rgb(226, 227, 238);
   --light-grey: rgb(242, 242, 246);
-  --dark-blue: rgb(20, 0, 200);
+  --dark-blue: rgb(16, 0, 158);
+  --trans-dark-blue: rgba(16, 0, 158, 0.9);
+  --blue: rgb(26, 4, 228);
   --light-blue: rgb(42, 83, 218);
   --pink: rgb(255, 192, 239);
   --purple: rgb(22, 0, 58);
-  --links: var(--dark-blue);
+  --links: var(--blue);
   --light-links: var(--light-blue);
 
   font-size: calc(var(--s0) * 1.1);
@@ -55,19 +57,18 @@ hr {
   line-height: 1.5;
 }
 .cluster {
-  --space: var(--s1);
+  --space: var(--s0);
   overflow: hidden;
 }
 .cluster > * {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   margin: calc(var(--space) / 2 * -1);
 }
 .cluster > * > * {
   margin: calc(var(--space) / 2);
-  flex-grow: 1;
   max-width: var(--measure);
 }
 .stack {
@@ -130,20 +131,17 @@ body {
   transform: translate(var(--s-2), var(--s-2));
 }
 footer {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  --space: var(--s1) !important;
 }
 footer > .nav-link {
   text-align: center;
 }
-footer > * {
-  margin: var(--s0) calc(var(--s1) * 2);
-  flex: 1;
-}
 footer > div {
+  width: 100%;
+  justify-content: flex-end !important;
+}
+footer > div > div {
   display: flex;
   justify-content: center;
+  flex: 1;
 }
