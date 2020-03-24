@@ -5,34 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pushing the CLUI Further</title>
     <link rel="stylesheet" href="../global.css" />
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css"
-    />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
     <style>
       :root {
         --measure: 60ch;
         font-size: 1.2rem;
       }
       main.stack {
-        width: max-content;
+        padding: var(--s0);
+        max-width: max-content;
         margin: var(--s2) auto;
+      }
+      .switcher > * {
+        display: flex;
+        flex-wrap: wrap;
+        margin: calc((var(--s0) / 2) * -1);
+      }
+      .switcher > * > * {
+        flex-grow: 1;
+        flex-basis: calc((var(--measure) - (100% - var(--s0))) * 999);
+        margin: calc(var(--s0) / 2);
+      }
+      .switcher > * > :nth-last-child(n + 3),
+      .switcher > * > :nth-last-child(n + 3) ~ * {
+        flex-basis: 100%;
       }
       .row {
         max-width: var(--measure);
-        display: flex;
-        /* flex-wrap: wrap; */
       }
-      .row > * + * {
-        margin-left: var(--s0);
-      }
-      .row img {
-        max-width: calc(var(--measure) / 2.1) !important;
+      .row .caption {
+        max-width: calc(var(--measure) / 2 - var(--s1)) !important;
       }
       .caption {
-        width: max-content;
-        height: max-content;
+        max-width: var(--measure);
+        max-height: max-content;
         padding: var(--s-1);
         background-color: var(--light-grey);
       }
@@ -75,20 +80,22 @@
         meaning they are still used heavily for tasks that involve manipulating
         plain text (i.e. programming).</p
       >
-      <div class="row">
-        <p class="caption">
-          <img src="lein.png" />
-          Discovering commands and their usage via <code>--help</code> flags
-          requires the user to mentally parse through the list of commands, work
-          that could easily be offloaded onto the UI.</p
+      <div class="switcher">
+        <div class="row">
+          <p class="caption">
+            <img src="lein.png" />
+            Discovering commands and their usage via <code>--help</code> flags
+            requires the user to mentally parse through the list of commands,
+            work that could easily be offloaded onto the UI.</p
+          >
+          <p class="caption">
+            <img src="hubclone.png" />
+            running <code>hub clone &lt;user&gt;/&lt;repo&gt;</code> is a lot
+            faster than navigating to GitHub and manually downloading a
+            repository</p
+          ></div
         >
-        <p class="caption">
-          <img src="hubclone.png" />
-          running <code>hub clone &lt;user&gt;/&lt;repo&gt;</code> is a lot
-          faster than navigating to GitHub and manually downloading a
-          repository</p
-        ></div
-      >
+      </div>
       <p
         >Graphical user interfaces (GUIs), on the other hand, offer the ability
         to represent output graphically rather than through plain text. However,
@@ -114,14 +121,18 @@
         to replace menu-diving and clicking icon-buttons with pressing various
         key or knob combinations.</p
       >
-      <p class="caption"
-        ><img src="push.png" />Ableton Push 2- a nearly $1,000 controller that
-        ostensibly enables one to focus on making music, not clicking around the
-        UI
-      </p>
-      <p class="caption"
-        ><img src="photoshopk.jpg" /> Photoshop keyboard overlay</p
-      >
+      <div class="switcher">
+        <div class="row">
+          <p class="caption"
+            ><img src="push.png" />Ableton Push 2- a nearly $1,000 controller
+            that ostensibly enables one to focus on making music, not clicking
+            around the UI
+          </p>
+          <p class="caption"
+            ><img src="photoshopk.jpg" /> Photoshop keyboard overlay</p
+          >
+        </div>
+      </div>
       <p
         >Since power-users often turn to CLIs (for programming tasks) or tactile
         controllers (for media production) as GUI-replacements, it&#39;s clear
