@@ -56,6 +56,12 @@ hr {
   max-width: none;
   line-height: 1.5;
 }
+code {
+  background-color: var(--pink);
+  padding: var(--s-4);
+  font-family: 'Menlo', monospace;
+  font-size: calc(var(--s0) * 0.9);
+}
 .cluster {
   --space: var(--s0);
   overflow: hidden;
