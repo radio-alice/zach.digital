@@ -20,10 +20,6 @@ main > .cluster > * {
 main > .cluster > * > * {
   flex-grow: 1;
 }
-.owl .card {
-  background-color: var(--grey);
-  color: var(--purple);
-}
 .personal > div {
   flex-direction: row-reverse;
 }
@@ -33,6 +29,9 @@ main > .cluster > * > * {
 }
 .personal .card a {
   color: var(--pink);
+}
+.personal .head {
+  text-align: right;
 }
 .card {
   padding: var(--s-1) var(--s0);
@@ -57,16 +56,14 @@ main > .cluster > * > * {
   color: var(--light-grey);
   width: 100%;
 }
-.owl h2 a {
-  color: var(--pink);
-}
 .owl em {
   font-style: normal;
   font-weight: bold;
   color: white;
 }
-.personal .head {
-  text-align: right;
+.owl .card {
+  background-color: var(--grey);
+  color: var(--purple);
 }
 #links {
   font-style: italic;
@@ -74,4 +71,9 @@ main > .cluster > * > * {
 }
 .card-links a::after {
   content: ' \2197';
+}
+.replit {
+  margin-top: 0;
+  padding: var(--s2) var(--res-width);
+  background-color: var(--pink);
 }
