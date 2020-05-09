@@ -3,6 +3,10 @@
   src: url('/static/BagnardSans.otf');
 }
 @font-face {
+  font-family: 'Supply';
+  src: url('/static/Supply-Regular.otf');
+}
+@font-face {
   font-family: 'HK Grotesk';
   src: url('/static/hkgrotesk_regular.woff') url('/static/hkgrotesk_bold.woff');
 }
