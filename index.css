@@ -47,8 +47,11 @@ main > .cluster > * > * {
   padding: var(--s-3) var(--s-2) 0 var(--s-2);
 }
 .about > div {
-  display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap-reverse;
+}
+.about img {
+  width: 100%;
+  height: auto;
 }
 .owl {
   padding: var(--s2) var(--res-width);
