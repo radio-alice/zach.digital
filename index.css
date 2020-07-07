@@ -48,6 +48,7 @@ main > .cluster > * > * {
 }
 .about > div {
   flex-wrap: wrap-reverse;
+  align-items: center;
 }
 .about img {
   width: 100%;
