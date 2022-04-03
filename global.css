@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'Bagnard';
-  src: url('/static/BagnardSans.otf');
+  font-family: "Bagnard";
+  src: url("/static/BagnardSans.otf");
 }
 @font-face {
-  font-family: 'Supply';
-  src: url('/static/Supply-Regular.otf');
+  font-family: "Supply";
+  src: url("/static/Supply-Regular.otf");
 }
 @font-face {
-  font-family: 'HK Grotesk';
-  src: url('/static/hkgrotesk_regular.woff') url('/static/hkgrotesk_bold.woff');
+  font-family: "HK Grotesk";
+  src: url("/static/hkgrotesk_regular.woff") url("/static/hkgrotesk_bold.woff");
 }
 :root {
   --ratio: 1.5;
@@ -24,11 +24,11 @@
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
-  --measure: 50ch;
+  --measure: 70ch;
 
   --dark-grey: rgb(163, 166, 197);
   --grey: rgb(226, 227, 238);
-  --light-grey: rgb(242, 242, 246);
+  --grey: #eae2ff;
   --dark-blue: rgb(16, 0, 158);
   --trans-dark-blue: rgba(16, 0, 158, 0.9);
   --blue: rgb(26, 4, 228);
@@ -39,7 +39,7 @@
   --light-links: var(--light-blue);
 
   font-size: calc(var(--s0) * 1.1);
-  font-family: 'HK Grotesk', sans-serif;
+  font-family: "HK Grotesk", sans-serif;
   color: var(--purple);
 }
 * {
@@ -63,7 +63,7 @@ hr {
 code {
   background-color: var(--pink);
   padding: var(--s-4);
-  font-family: 'Menlo', monospace;
+  font-family: "Menlo", monospace;
   font-size: calc(var(--s0) * 0.9);
 }
 .cluster {
@@ -114,7 +114,7 @@ ul {
   list-style: none;
 }
 ul li::before {
-  content: '→';
+  content: "→";
   margin: 0 var(--s-2);
 }
 body {
