@@ -20,6 +20,7 @@
   --res-width: calc(7vw - var(--s0));
 
   --lilac: #eae2ff;
+  --dark-lilac: #c8bcee;
   --blue: rgb(26, 4, 228);
   --light-blue: rgb(42, 83, 218);
   --purple: rgb(22, 0, 58);
@@ -81,15 +82,18 @@ body {
   background-color: var(--lilac);
   width: 100%;
 }
-main > section {
+main {
   padding: var(--s0) var(--res-width);
 }
-main > section > * {
-  max-width: calc(2 * var(--measure) + 3.6rem);
-  width: 100%;
-  margin: 0 auto !important;
+main > * {
+  max-width: var(--measure);
 }
 #links {
   font-style: italic;
   width: 95%;
+}
+blockquote {
+  background: var(--dark-lilac);
+  padding: var(--s0);
+  font-style: italic;
 }
