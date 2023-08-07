@@ -97,3 +97,8 @@ blockquote {
   padding: var(--s0);
   font-style: italic;
 }
+li {
+  list-style-type: "\2023";
+  margin-left: var(--space);
+  padding-left: var(--space);
+}

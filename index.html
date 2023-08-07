@@ -5,13 +5,13 @@
   <meta name="viewport" content=
   "width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>hire me ↯</title>
+  <title>Zachary Sherman ↯</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <main class="stack">
     <h1>Zachary Sherman</h1>
-    <h4>I build tools for developers</h4>
+    <h4>I build tools for people</h4>
     <div class="cluster card-links">
       <div id="links">
         <a href="/static/Sherman_resume.pdf">resume</a> <a href=
@@ -25,60 +25,96 @@
       <p>Zach is a pleasure to work with, a passionate engineer who
       has great instincts and technical understanding.</p>
       <p>He is an invaluable steward for the infra team’s platform.
-      He cares deeply for the engineering experience, seeking input
-      from our product engineers to help inform decision making and
-      product direction with an eye towards ease of use and
+      He cares deeply for the experience of his fellow engineers
+      and reliably seeks their input to inform product direction.
+      In this work he especially values ease of use and
       maintainability.</p>
       <p>I think it is important to point out that everyone who
       gave feedback expressed joy and pleasure working with Zach,
-      appreciated his dedication, and was committed to wanting to
-      help him continue to grow and succeed. This was fairly unique
-      in my experience and I think is a reflection of Zach as a
+      appreciated his dedication, and committed to help him
+      continue to grow and succeed. This was fairly unique in my
+      experience and I think is a reflection of Zach as a
       person.</p>
       <footer>
         - a recent performance review
       </footer>
     </blockquote>
-    <p>I build tools that help programmers work faster and with
-    less frustration. I try to focus on "scratching my own itch"
-    because it makes the work more satisfying and means I build
-    more intuitive tools. I find that working in close relationship
-    with the users of my tools has similar benefits. This
-    relational approach is especially well-suited to small teams
-    and developer-tools companies, where I can directly engage with
-    those wielding the tools I build.</p>
-    <p>In these relationships, I focus on understanding understand
-    how developers or users work and what slows them down. I build
-    smaller fixes while designing systemic changes to address
-    present-day problems as well as deeper long-term issues.
-    Sharing my work throughout helps me stay attuned to users'
-    needs.</p>
-    <p>My work is informed by a long history of building productive
-    public relationships with people, both inside and outside of
-    software. I've been building software for people I know (both
-    friends and colleagues) for five years, so I have plenty
-    practice working out what they need and implementing it. For
-    full project descriptions <a href=
-    "/static/Sherman_resume.pdf">see my resume</a>. Some examples
-    are: the <a href="https://ngrok.com">ngrok</a> developer
-    environment and associated tooling which I've maintained for
-    the past three years and miscellaneous dev tools at <a href=
-    "https://replit.com/community/all">repl.it</a> and open work
-    labs. I also <a href=
-    "https://git.sr.ht/~radioalice/e-worm.club">built</a> <a href=
-    "https://e-worm.club">e-worm.club</a> a few years ago. It's a
-    social site just for my friends that's been through several
-    iterations before I settled on something like a private, more
-    user-friendly <a href="http://tilde.club">tilde.club</a>.
-    Building these tools has taught me a ton about working in the
-    messy space in between people and software.</p>
-    <p>I owe much of my focus on building relationships to the four
-    years I spent as a community organizer in Chicago. Community
-    organizing focuses on identifying the root causes of community
-    issues and bringing people together to fix them. In my software
-    work I rely on the same kinds of high-trust relationships to
-    identify the deeper causes of developer friction and build
-    tools to address them.</p>
+    <p>Software development requires some skill with computers and
+    even more skill with people. Much of my relational experience
+    comes from four years community-organizing in Chicago. I fought
+    side-by-side with college kids and old south-siders to better
+    our community. We came together to understand the root causes
+    of injustice which fueled our campaigns for universal
+    healthcare, climate action, and ending police brutality. In
+    software I rely on similar high-trust relationships. In deep
+    collaboration, I identify the root causes of friction and build
+    tools to address them. Zen practice also informs my work: it's
+    much easier to understand others with a little understanding of
+    myself.</p>
+    <p>Here's my approach to software development. I build tools
+    that help people work faster and with less frustration. I focus
+    on "scratching my own itch" because it makes the work more
+    satisfying and means I build more intuitive tools. Working in
+    close relationship with the users of my tools helps a lot too.
+    In these relationships, I focus on understanding how developers
+    or users work and what slows them down. I build smaller fixes
+    to address present-day problems while designing systemic
+    changes that address longer-term issues. Sharing my work
+    throughout helps me stay attuned to users' needs.</p>
+    <p>I work best when I can directly engage the people using my
+    software. So my skillset is best suited to places that
+    encourage that engagement, like small teams and developer-tools
+    companies.</p>
+    <p>I've been building software for people I know (both friends
+    and colleagues) for five years, so I have plenty practice
+    working out what they need and implementing it. For full
+    project descriptions <a href="/static/Sherman_resume.pdf">see
+    my resume</a>. Some highlights:</p>
+    <ul class="stack">
+      <li>
+        <b>developer environments:</b> I maintain the <a href=
+        "https://ngrok.com">ngrok</a> developer environment and
+        associated tooling using nix/nixos, golang, typescript,
+        bash, systemd.
+      </li>
+      <li><b>CI systems:</b> I lead ngrok's CI development and
+      maintenance using nix/nixos, bash, typescript (as a way to
+      programmatically generate YAML for pipeline configurations),
+      CircleCI, DroneCI, buildkite (we stuck with buildkite).</li>
+      <li><b>environment configuration:</b> I lead the ongoing
+      design and maintenance of a custom typescript program that
+      allows developers to change environment, cluster, service
+      configurations and infrastructure without diving into YAML
+      (or terraform) hell. Like a very fancy version of helm. This
+      involves kubernetes manifests, terraform, dockerfiles, and a
+      whole lot of fun with the typescript type system for maximum
+      <i>ergonomics</i>.</li>
+      <li><b>agent packaging:</b> I developed and maintain docker,
+      snap, homebrew, and chocolatey packages for the ngrok agent.
+      I automated releases with go and buildkite.</li>
+      <li><b>observability:</b> I have experience operating vector
+      (logging), veneur and datadog agents (metrics), and
+      otel-collector and refinery with honeycomb for tracing
+      data.</li>
+      <li>
+        <b>e-worm.club:</b> I also <a href=
+        "https://git.sr.ht/~radioalice/e-worm.club">built</a>
+        <a href="https://e-worm.club">e-worm.club</a> a few years
+        ago. It's a social site just for my friends that's been
+        through several iterations before I settled on something
+        like a private, more user-friendly <a href=
+        "http://tilde.club">tilde.club</a>. Using async rust! which
+        was very fancy back in 2020.
+      </li>
+      <li>
+        <b>miscellaneous dev tools:</b> ...built as an engineer at
+        <a href="https://replit.com/community/all">repl.it</a> and
+        open work labs using typescript, react, redux.
+      </li>
+    </ul>
+    <p>Building these tools has taught me a ton about working in
+    the messy space in between people and software.</p><br>
+    <br>
   </main>
 </body>
 </html>
